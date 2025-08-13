@@ -18,8 +18,7 @@
                 <div class="card" id="check1">
                     <h3>Check 1 — The Lighthouse Riddle</h3>
                     <p class="hint">
-                        Riddle: “I speak without a mouth and hear without ears. I have nobody, but I come alive with
-                        wind.”
+                        Riddle: “I repeat what you say, but I have no mouth. What am I?”
                     </p>
                     <form id="riddleForm">
                         <label for="riddleAnswer">Answer:</label>
@@ -31,32 +30,24 @@
                         />
                         <button type="submit">Submit</button>
                     </form>
-                    <p class="status" id="riddleStatus">Status: <span>incomplete</span></p>
+                    <p class="status bad" id="riddleStatus">Status: <span>incomplete</span></p>
                 </div>
 
                 <div class="card" id="check2">
                     <h3>Check 2 — Find the Keeper’s Token</h3>
                     <p>
-                        The keeper left a short token somewhere on this site. It’s just a plain text file. Clue: Search
-                        engines were asked not to index something.
+                        The keeper left a short token somewhere on this site. It’s just a plain text file.
                     </p>
                     <details>
                         <summary>Need a nudge?</summary>
-                        <ul>
-                            <li>Try visiting <code>/robots.txt</code> to see what’s disallowed.</li>
-                            <li>Then explore the path(s) you find.</li>
-                            <li>
-                                You can also use <code>curl</code> to fetch text files (e.g.,
-                                <code>curl https://your-site/vault/key.txt</code> once you know the path).
-                            </li>
-                        </ul>
+                        <p>Search for the map that tells search engines where not to go.</p>
                     </details>
                     <form id="tokenForm">
                         <label for="tokenInput">Keeper’s token:</label>
-                        <input id="tokenInput" name="tokenInput" autocomplete="off" placeholder="e.g., REEF42" />
+                        <input id="tokenInput" name="tokenInput" autocomplete="off" placeholder="type your answer" />
                         <button type="submit">Submit</button>
                     </form>
-                    <p class="status" id="tokenStatus">Status: <span>incomplete</span></p>
+                    <p class="status bad" id="tokenStatus">Status: <span>incomplete</span></p>
                 </div>
 
                 <div class="card" id="check3">
@@ -68,11 +59,10 @@
                     <details>
                         <summary>Example</summary>
                         <p>
-                            If your site is <code>https://example.vercel.app</code>, try
-                            <code>https://example.vercel.app/?port=1337</code>.
+                            <code>https://beacon-courier.vercel.app/?port=****</code>.
                         </p>
                     </details>
-                    <p class="status" id="portStatus">Status: <span>incomplete</span></p>
+                    <p class="status bad" id="portStatus">Status: <span>incomplete</span></p>
                 </div>
             </section>
 

@@ -4,4 +4,4 @@ Contact: beacon@example.invalid
 Site: https://example.invalid
 
 /* NOTES */
-We prefer clean HTML, simple JS, and ports with a certain... leet quality.
+We prefer clean HTML, simple JS, and ports with a certain... 1337 quality.
