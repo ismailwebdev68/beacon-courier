@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Beacon Courier: The Lost Signal</title>
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <!-- A lighthouse rarely listens on boring ports. 1337, perhaps? -->
+        <header>
+            <h1>Beacon Courier: The Lost Signal</h1>
+        </header>
+
+        <main>
+            <section class="checks grid">
+                <div class="card" id="check1">
+                    <h3>Check 1 — The Lighthouse Riddle</h3>
+                    <p class="hint">
+                        Riddle: “I speak without a mouth and hear without ears. I have nobody, but I come alive with
+                        wind.”
+                    </p>
+                    <form id="riddleForm">
+                        <label for="riddleAnswer">Answer:</label>
+                        <input
+                            id="riddleAnswer"
+                            name="riddleAnswer"
+                            autocomplete="off"
+                            placeholder="type your answer"
+                        />
+                        <button type="submit">Submit</button>
+                    </form>
+                    <p class="status" id="riddleStatus">Status: <span>incomplete</span></p>
+                </div>
+
+                <div class="card" id="check2">
+                    <h3>Check 2 — Find the Keeper’s Token</h3>
+                    <p>
+                        The keeper left a short token somewhere on this site. It’s just a plain text file. Clue: Search
+                        engines were asked not to index something.
+                    </p>
+                    <details>
+                        <summary>Need a nudge?</summary>
+                        <ul>
+                            <li>Try visiting <code>/robots.txt</code> to see what’s disallowed.</li>
+                            <li>Then explore the path(s) you find.</li>
+                            <li>
+                                You can also use <code>curl</code> to fetch text files (e.g.,
+                                <code>curl https://your-site/vault/key.txt</code> once you know the path).
+                            </li>
+                        </ul>
+                    </details>
+                    <form id="tokenForm">
+                        <label for="tokenInput">Keeper’s token:</label>
+                        <input id="tokenInput" name="tokenInput" autocomplete="off" placeholder="e.g., REEF42" />
+                        <button type="submit">Submit</button>
+                    </form>
+                    <p class="status" id="tokenStatus">Status: <span>incomplete</span></p>
+                </div>
+
+                <div class="card" id="check3">
+                    <h3>Check 3 — Tune the Port</h3>
+                    <p>
+                        The beacon listens on a “leet” port. Add a URL parameter named <code>port</code> with the
+                        correct value to this page’s address and reload.
+                    </p>
+                    <details>
+                        <summary>Example</summary>
+                        <p>
+                            If your site is <code>https://example.vercel.app</code>, try
+                            <code>https://example.vercel.app/?port=1337</code>.
+                        </p>
+                    </details>
+                    <p class="status" id="portStatus">Status: <span>incomplete</span></p>
+                </div>
+            </section>
+
+            <section class="flag card">
+                <h2>Emergency Override Flag</h2>
+                <p id="flagBox">Solve all three checks to reveal the flag.</p>
+            </section>
+
+            <section class="tips card">
+                <h2>General Tips</h2>
+                <ul>
+                    <li>View page source (<kbd>Ctrl/Cmd</kbd> + <kbd>U</kbd>) or use devtools to inspect assets.</li>
+                    <li>Static sites can still hide useful clues in plain files.</li>
+                    <li>URL parameters are part of the address after the <code>?</code>.</li>
+                </ul>
+            </section>
+        </main>
+    </body>
+</html>

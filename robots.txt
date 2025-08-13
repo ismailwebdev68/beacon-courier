@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /vault/
+
+# Tip for explorers:
+# Some emergency notes are left in plain text where crawlers are asked not to go.

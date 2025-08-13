@@ -1,0 +1,8 @@
+<section class="story card">
+      <h2>Backstory</h2>
+      <p>
+        The coastal lighthouse's guidance beacon went silent. The keeper left a simple web
+        terminal with three safety checks. Pass them all to reveal the emergency override code (the flag).
+      </p>
+      <p class="goal"><strong>Goal:</strong> Satisfy all three checks below to unlock the flag. The flag stays here—submit it on your separate platform.</p>
+    </section>

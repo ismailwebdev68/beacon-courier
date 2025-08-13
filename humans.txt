@@ -1,0 +1,7 @@
+/* TEAM */
+Developer: Keeper on Duty
+Contact: beacon@example.invalid
+Site: https://example.invalid
+
+/* NOTES */
+We prefer clean HTML, simple JS, and ports with a certain... leet quality.
